@@ -1,0 +1,31 @@
+This is the readme file for this repo:
+
+This uses the following:
+Bootstrap CSS
+MySQL to store the relevant tweets
+Sentiment API to score the tweets
+Twitter API to retreive tweets
+
+Make sure you do the following before you use this file:
+
+Create SQL Database "twitter"
+and table "leads" with the following command:
+
+create table leads (
+keyword VARCHAR(40),
+username VARCHAR(40),
+tweet VARCHAR(200),
+image_url VARCHAR(200),
+prob_neg DOUBLE,
+prob_pos DOUBLE,
+prob_neu DOUBLE,
+label VARCHAR(8),
+id BIGINT unsigned not null key,
+index(keyword),
+index(id)) engine myISAM;
+
+Also ensure you have the bootstrap library from here:
+http://twitter.github.com/bootstrap/index.html
+
+Add what string you want to search: Here the example is burgerking
+Also update rpp=# of tweets retreived
