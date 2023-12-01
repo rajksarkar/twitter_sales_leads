@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rajksarkar_twitter_sales_leads_1701466327944-pr-trigger-input-set
+  identifier: Build_rajksarkar_twitter_sales_leads_1701466327944prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_rajksarkar_twitter_sales_leads_1701466327944
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
